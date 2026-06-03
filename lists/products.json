@@ -1,11 +1,21 @@
 {
-  "bugs-edition": {
-    "asin": "B08XXXXXXX"
+  "globalSettings": {
+    "baseURL": "https://www.amazon.com/dp/",
+    "loadingMessage": "Routing you to our product review page...",
+    "errorMessage": "Oops! This product link is currently unavailable."
   },
-  "tractor-edition": {
-    "asin": "B09YYYYYYY"
-  },
-  "find-me-2yr": {
-    "asin": "B07ZZZZZZZ"
+  "products": {
+    "bugs-edition": {
+      "asin": "B08XXXXXXX",
+      "loadingMessage": "Loading the Crosswords: Bugs Edition review page..."
+    },
+    "tractor-edition": {
+      "asin": "B09YYYYYYY",
+      "baseURL": "https://www.amazon.in/dp/",
+      "loadingMessage": "Opening Tractor Edition on Amazon India..."
+    },
+    "find-me-2yr": {
+      "asin": "B07ZZZZZZZ"
+    }
   }
 }
