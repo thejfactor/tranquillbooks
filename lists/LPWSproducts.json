@@ -5,8 +5,8 @@
     "errorMessage": "Oops! This product link is currently unavailable."
   },
   "products": {
-    "bugs-edition": {
-      "asin": "B08XXXXXXX",
+    "collection_The_Living_World": {
+      "asin": "B0CP9J1CX9",
       "loadingMessage": "Loading the Crosswords: Bugs Edition review page..."
     },
     "tractor-edition": {
