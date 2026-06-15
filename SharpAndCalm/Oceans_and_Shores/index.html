@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p id="status-text">Initializing secure link...</p>
+
+  <script>
+    // 1. The ONLY thing you change for new product folders is this ID
+    const productID = "Oceans_and_Shores"; 
+    
+    const statusText = document.getElementById("status-text");
+    
+    // 2. Fetch the central dictionary from your root folder
+    fetch('/lists/LPWSproducts.json')
+      .then(response => response.json())
+      .then(data => {
+        const global = data.globalSettings;
+        const product = data.products[productID];
+        
+        // Fallback Logic 1: Determine the loading message
+        const activeLoadingMessage = (product && product.loadingMessage) ? product.loadingMessage : global.loadingMessage;
+        statusText.innerText = activeLoadingMessage;
+        
+        // Check if the product exists and has an ASIN
+        if (product && product.asin) {
+          
+          // Fallback Logic 2: Determine the base URL
+          const activeBaseURL = product.baseURL ? product.baseURL : global.baseURL;
+          
+          // Execute the redirection instantly
+          window.location.href = activeBaseURL + product.asin;
+          
+        } else {
+          // Fallback Logic 3: Determine the error message if product/ASIN is missing
+          const activeErrorMessage = (product && product.errorMessage) ? product.errorMessage : global.errorMessage;
+          statusText.innerText = activeErrorMessage;
+        }
+      })
+      .catch(error => {
+        // Safe fallback if the products.json file fails to load entirely
+        statusText.innerText = "System error: Unable to load routing configurations.";
+      });
+  </script>
+</body>
+</html>
