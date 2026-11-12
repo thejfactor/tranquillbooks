@@ -9,6 +9,10 @@
       "asin": "B0H61ZT269",
       "loadingMessage": "Loading the Living World Collection from Sharp and Calm"
     },
+    "collection_The_Living_WorldXL": {
+      "asin": "B0HQXTF4F8",
+      "loadingMessage": "Loading the Living World Collection Extra Large Edition from Sharp and Calm"
+    },
     "tractor-edition": {
       "asin": "B09YYYYYYY",
       "baseURL": "https://www.amazon.in/dp/",
@@ -25,6 +29,10 @@
       "asin": "B0H9T1PNPL",
       "loadingMessage": "Loading Earth & Sky review page..."
     },
+    "Earth_and_SkyXL": {
+      "asin": "B0HR2K6B74",
+      "loadingMessage": "Loading Earth & Sky Extra Large Print review page..."
+    },
     "the_Turning_Year": {
       "asin": "B0HBF8HJDD",
       "loadingMessage": "Loading The Turning Year review page..."
@@ -32,6 +40,10 @@
     "the_Heart_of_the_Home": {
       "asin": "B0HB7CMGBT",
       "loadingMessage": "Loading The Heart of the Home review page..."
+    },
+    "the_Heart_of_the_HomeXL": {
+      "asin": "B0HQYCR6WW",
+      "loadingMessage": "Loading The Heart of the Home Extra Large Print review page..."
     },
     "Celebrations_and_Traditions": {
       "asin": "B0CP9J1CX9",
