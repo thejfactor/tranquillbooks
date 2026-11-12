@@ -18,7 +18,7 @@ This repo powers the QR codes printed in TranQuill Books' paperbacks (KDP). Each
 ## Table of Contents
 
 - [TranQuill Books](#tranquill-books) - registry of all live QR paths
-  - [SharpAndCalm](#sharpandcalm) - 15 books + 1 collection (16 pages), list: `lists/LPWSproducts.json`
+  - [SharpAndCalm](#sharpandcalm) - 15 books + 1 collection, plus 2 XL books + 1 XL collection (19 pages), list: `lists/LPWSproducts.json`
   - [CrossWord](#crossword) - Divya Darshan, list: `lists/CWGeneric.json`
 - [Adding a New Book](#adding-a-new-book) - step-by-step procedure (QR path + Amazon URL as inputs; ask whether to use a new or existing list)
 
@@ -49,9 +49,17 @@ Each URL below is the QR code target. When scanned, it looks up the book's entry
 | 15 | Home & Garden | `qr.tranquillbooks.com/SharpAndCalm/Home_and_Garden/` | amazon.com/dp/B0HBLDPN57 |
 | C1 | The Living World (collection) | `qr.tranquillbooks.com/SharpAndCalm/Collection_TheLivingWorld/` | amazon.com/dp/B0H61ZT269 |
 
+**XL (extra large print) collection:** the first two XL books and the XL collection page.
+
+| # | Book Title | QR URL | Points To |
+|---|---|---|---|
+| XL1 | Earth & Sky XL | `qr.tranquillbooks.com/SharpAndCalm/Earth_and_SkyXL/` | amazon.com/dp/B0HR2K6B74 |
+| XL2 | The Heart of the Home XL | `qr.tranquillbooks.com/SharpAndCalm/the_Heart_of_the_HomeXL/` | amazon.com/dp/B0HQYCR6WW |
+| CXL | The Living World XL (collection) | `qr.tranquillbooks.com/SharpAndCalm/Collection_TheLivingWorldXL/` | amazon.com/dp/B0HQXTF4F8 |
+
 **List-only entries without a redirect page:** `lists/LPWSproducts.json` also holds `tractor-edition` (`B09YYYYYYY`, amazon.in) and `find-me-2yr` (`B07ZZZZZZZ`). Both are dummy placeholder ASINs and have no `index.html`, so they are not live QR targets.
 
-Note: the page folder `Collection_TheLivingWorld/` uses the product ID `collection_The_Living_World` (the list key); the folder name and the key differ by design, the page's `productID` is what must match the list.
+Note: the page folders `Collection_TheLivingWorld/` and `Collection_TheLivingWorldXL/` use the product IDs `collection_The_Living_World` and `collection_The_Living_WorldXL` (the list keys); the folder name and the key differ, and the page's `productID` is what must match the list.
 
 ### CrossWord
 
