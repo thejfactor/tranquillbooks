@@ -18,7 +18,7 @@ This repo powers the QR codes printed in TranQuill Books' paperbacks (KDP). Each
 ## Table of Contents
 
 - [TranQuill Books](#tranquill-books) - registry of all live QR paths
-  - [SharpAndCalm](#sharpandcalm) - 15 books, list: `lists/LPWSproducts.json`
+  - [SharpAndCalm](#sharpandcalm) - 15 books + 1 collection (16 pages), list: `lists/LPWSproducts.json`
   - [CrossWord](#crossword) - Divya Darshan, list: `lists/CWGeneric.json`
 - [Adding a New Book](#adding-a-new-book) - step-by-step procedure (QR path + Amazon URL as inputs; ask whether to use a new or existing list)
 
@@ -32,21 +32,26 @@ Each URL below is the QR code target. When scanned, it looks up the book's entry
 
 | # | Book Title | QR URL | Points To |
 |---|---|---|---|
-| 1 | The Animal Kingdom | `qr.tranquillbooks.com/SharpAndCalm/the_Animal_Kingdom/` | amazon.com/dp/B0CP9J1CX9 |
-| 2 | Earth & Sky | `qr.tranquillbooks.com/SharpAndCalm/Earth_and_Sky/` | amazon.com/dp/B0CP9J1CX9 |
-| 3 | The Turning Year | `qr.tranquillbooks.com/SharpAndCalm/the_Turning_Year/` | amazon.com/dp/B0CP9J1CX9 |
-| 4 | The Heart of the Home | `qr.tranquillbooks.com/SharpAndCalm/the_Heart_of_the_Home/` | amazon.com/dp/B0CP9J1CX9 |
-| 5 | Celebrations & Traditions | `qr.tranquillbooks.com/SharpAndCalm/Celebrations_and_Traditions/` | amazon.com/dp/B0CP9J1CX9 |
-| 6 | Oceans & Shores | `qr.tranquillbooks.com/SharpAndCalm/Oceans_and_Shores/` | amazon.com/dp/B0CP9J1CX9 |
-| 7 | Faithful Companions | `qr.tranquillbooks.com/SharpAndCalm/Faithful_Companions/` | amazon.com/dp/B0CP9J1CX9 |
-| 8 | The Sporting Life | `qr.tranquillbooks.com/SharpAndCalm/the_Sporting_Life/` | amazon.com/dp/B0CP9J1CX9 |
-| 9 | Country Life | `qr.tranquillbooks.com/SharpAndCalm/Country_Life/` | amazon.com/dp/B0CP9J1CX9 |
-| 10 | Moments in History | `qr.tranquillbooks.com/SharpAndCalm/Moments_in_History/` | amazon.com/dp/B0CP9J1CX9 |
-| 11 | Tales, Myths & Legends | `qr.tranquillbooks.com/SharpAndCalm/Tales_Myths_and_Legends/` | amazon.com/dp/B0CP9J1CX9 |
-| 12 | The Working World | `qr.tranquillbooks.com/SharpAndCalm/the_Working_World/` | amazon.com/dp/B0CP9J1CX9 |
-| 13 | Stage, Screen & Song | `qr.tranquillbooks.com/SharpAndCalm/Stage_Screen_and_Song/` | amazon.com/dp/B0CP9J1CX9 |
-| 14 | The Age of Travel | `qr.tranquillbooks.com/SharpAndCalm/the_Age_of_Travel/` | amazon.com/dp/B0CP9J1CX9 |
-| 15 | Home & Garden | `qr.tranquillbooks.com/SharpAndCalm/Home_and_Garden/` | amazon.com/dp/B0CP9J1CX9 |
+| 1 | The Animal Kingdom | `qr.tranquillbooks.com/SharpAndCalm/the_Animal_Kingdom/` | amazon.com/dp/B0H9MRN56L |
+| 2 | Earth & Sky | `qr.tranquillbooks.com/SharpAndCalm/Earth_and_Sky/` | amazon.com/dp/B0H9T1PNPL |
+| 3 | The Turning Year | `qr.tranquillbooks.com/SharpAndCalm/the_Turning_Year/` | amazon.com/dp/B0HBF8HJDD |
+| 4 | The Heart of the Home | `qr.tranquillbooks.com/SharpAndCalm/the_Heart_of_the_Home/` | amazon.com/dp/B0HB7CMGBT |
+| 5 | Celebrations & Traditions | `qr.tranquillbooks.com/SharpAndCalm/Celebrations_and_Traditions/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 6 | Oceans & Shores | `qr.tranquillbooks.com/SharpAndCalm/Oceans_and_Shores/` | amazon.com/dp/B0H9ZB7CK7 |
+| 7 | Faithful Companions | `qr.tranquillbooks.com/SharpAndCalm/Faithful_Companions/` | amazon.com/dp/B0HB97XY1V |
+| 8 | The Sporting Life | `qr.tranquillbooks.com/SharpAndCalm/the_Sporting_Life/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 9 | Country Life | `qr.tranquillbooks.com/SharpAndCalm/Country_Life/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 10 | Moments in History | `qr.tranquillbooks.com/SharpAndCalm/Moments_in_History/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 11 | Tales, Myths & Legends | `qr.tranquillbooks.com/SharpAndCalm/Tales_Myths_and_Legends/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 12 | The Working World | `qr.tranquillbooks.com/SharpAndCalm/the_Working_World/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 13 | Stage, Screen & Song | `qr.tranquillbooks.com/SharpAndCalm/Stage_Screen_and_Song/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 14 | The Age of Travel | `qr.tranquillbooks.com/SharpAndCalm/the_Age_of_Travel/` | amazon.com/dp/B0CP9J1CX9 (placeholder, not yet updated) |
+| 15 | Home & Garden | `qr.tranquillbooks.com/SharpAndCalm/Home_and_Garden/` | amazon.com/dp/B0HBLDPN57 |
+| C1 | The Living World (collection) | `qr.tranquillbooks.com/SharpAndCalm/Collection_TheLivingWorld/` | amazon.com/dp/B0H61ZT269 |
+
+**List-only entries without a redirect page:** `lists/LPWSproducts.json` also holds `tractor-edition` (`B09YYYYYYY`, amazon.in) and `find-me-2yr` (`B07ZZZZZZZ`). Both are dummy placeholder ASINs and have no `index.html`, so they are not live QR targets.
+
+Note: the page folder `Collection_TheLivingWorld/` uses the product ID `collection_The_Living_World` (the list key); the folder name and the key differ by design, the page's `productID` is what must match the list.
 
 ### CrossWord
 
